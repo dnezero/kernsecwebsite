@@ -1,0 +1,65 @@
+.site {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: radial-gradient(circle at center, rgba(29, 62, 169, 0.16), transparent 34%),
+    linear-gradient(180deg, rgba(6, 10, 20, 1) 0%, rgba(11, 16, 36, 1) 100%);
+}
+.background-net {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(77, 124, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(77, 124, 255, 0.08) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(circle 160px at var(--cursor-x) var(--cursor-y), rgba(255,255,255,1) 0%, rgba(255,255,255,0.1) 40%, transparent 60%);
+  mix-blend-mode: screen;
+  opacity: 0.92;
+  z-index: 0;
+}
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(100%, calc(var(--max-width) - 48px));
+  margin: 0 auto;
+  padding: 28px 24px 0;
+}
+.brand {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #dbe6ff;
+}
+.page-shell {
+  position: relative;
+  z-index: 1;
+  width: min(100%, calc(var(--max-width) - 48px));
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+.section {
+  width: 100%;
+  min-height: 80vh;
+  display: grid;
+  gap: 2rem;
+  align-content: center;
+}
+.section + .section {
+  margin-top: 64px;
+}
+@media (max-width: 760px) {
+  .site-header, .page-shell {
+    width: min(100%, calc(100% - 32px));
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .site-header {
+    padding-top: 20px;
+  }
+}

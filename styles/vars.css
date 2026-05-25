@@ -1,0 +1,17 @@
+:root {
+  --bg: #060a14;
+  --surface: rgba(7, 12, 26, 0.88);
+  --surface-strong: rgba(12, 18, 34, 0.94);
+  --text: #e9f1ff;
+  --muted: #9bb8ff;
+  --accent: #4d7cff;
+  --accent-strong: #77a4ff;
+  --border: rgba(120, 153, 255, 0.18);
+  --shadow: 0 28px 80px rgba(6, 10, 20, 0.22);
+  --radius: 24px;
+  --radius-sm: 18px;
+  --max-width: 1200px;
+  --transition: 180ms ease;
+  --cursor-x: 50vw;
+  --cursor-y: 50vh;
+}

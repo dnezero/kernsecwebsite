@@ -1,0 +1,39 @@
+/* Base reset for a cleaner minimal foundation */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+:root {
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #ebf2ff;
+  background: #060a14;
+}
+img, picture, svg {
+  max-width: 100%;
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button, input, textarea {
+  font: inherit;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
